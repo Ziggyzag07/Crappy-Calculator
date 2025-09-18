@@ -1,24 +1,29 @@
 public class commands {
-    public void add(int x, int y){
-        int z = x + y;
-        System.out.println(z);
+    private int result;
+    public commands(int z){
+        this.result = z;
     }
-    public void sub(int x, int y){
-        int z = x - y;
-        System.out.println(z);
+    public static int add(int x, int y){
+        return x + y;
     }
-    public void mul(int x, int y){
-        int z = x * y;
-        System.out.println(z);
+    public static int sub(int x, int y){
+         return x - y;
     }
-    public void div(int x, int y){
-        int z = x / y;
-        System.out.println(z);
+    public static int mul(int x, int y){
+         return x * y;
     }
-    public void remainder(int x, int y){
-        int z = x % y;
-        System.out.println(z);
+    public static int div(int x, int y){
+         return x / y;
+
     }
+    public static int remainder(int x, int y){
+         return x % y;
+
+    }
+    public Integer getResult() {
+        return result;
+    }
+
 
 
 }
